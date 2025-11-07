@@ -34,6 +34,21 @@ body {
   box-shadow: 0 25px 50px rgba(0,0,0,0.7);
 }
 
+/* 📘 صورة الغلاف */
+.cover {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(0, 255, 127, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cover:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 255, 127, 0.35);
+}
+
 /* Heading */
 h1 {
   font-size: 32px;
@@ -53,7 +68,7 @@ p.description {
 .price {
   font-size: 26px;
   font-weight: 700;
-  color: #00ff7f; /* أخضر فاتح لافت */
+  color: #00ff7f;
   margin-bottom: 30px;
 }
 
@@ -93,7 +108,7 @@ p.description {
   position: relative;
   padding-left: 30px;
   font-size: 16px;
-  color: #aaffaa; /* أخضر فاتح ناعم */
+  color: #aaffaa;
 }
 
 .benefits li::before {
@@ -116,6 +131,10 @@ p.description {
 @media screen and (max-width: 600px) {
   .card {
     padding: 30px 20px;
+  }
+
+  .cover {
+    max-width: 260px;
   }
 
   h1 {
